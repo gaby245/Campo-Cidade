@@ -1,0 +1,461 @@
+body.Introdução {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(134, 210, 136); 
+  height: 10px;
+  background-image: url('img/Campo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
+body.Festa.Junina {
+  background-image: url('img/festajunina.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;}
+body.Feira.Agropecuária {
+  background-image: url('img/feiraagropecuária.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;}
+body.Festivais.Gastronômicos {
+  background-image: url('img/comidas.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;}
+body:not(.Introdução)::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;}
+
+h1 {
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Georgia', serif;
+  margin-top: 40px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);}
+
+body.Introdução h1 {  text-align: center;
+  font-size: 70px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 80px;
+  margin-top: 55px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);}
+
+
+body.Introdução h1 {color: #05ac1e;}
+body.Festa.Junina h1 {color: #b18905;}
+body.Feira.Agropecuária h1 {color: #e10c0c;}
+body.Festivais.Gastronômicos h1 {color: #0058db;}
+
+p {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 30px;
+  margin-top: 10px;
+  }
+
+p2 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 25px;
+  margin-top: 10px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);}
+
+a {
+  font-size: 23px;
+  text-decoration: none;
+  font-weight: bold;}
+
+.desc {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+   margin: 30px;
+  margin-top: 100px;
+  text-align: left;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);}
+
+body.Introdução .desc {color: #000000;}
+
+body.Introdução a  {color: #000000f5;}
+body.Festa.Junina a  {color: #d9ff00;}
+body.Feira.Agropecuária a {color: #fa2929;}
+body.Festivais.Gastronômicos a {color: #3399ff;}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;}
+
+body.Introdução .card.principal {
+  width: 1300px;
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #24571c;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(97, 137, 85, 0.3);
+  font-size: 22px;
+  margin-top: 2px;}
+body.Introdução .card {
+  background-color: #ffffff;
+  border: 2px solid #24571c;
+  border-radius: 15px;
+  padding: 15px;
+  width: 325px;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+  margin-top: 5px;
+ margin-bottom: 40px;}
+.card:hover {
+  transform: scale(1.05);}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;}
+.card h2 {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #000000;}
+.card p {
+  font-size: 16px;
+  color: #000000;}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 40px;}
+
+.card.Festa.Junina h2 a {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+  text-decoration: none;}
+.card.Festa.Junina h2 a:hover {
+  color: #b18905;
+  text-decoration: underline;}
+
+.card.Feira.Agropecuária h2 a {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+  text-decoration: none;}
+.card.Feira.Agropecuária h2 a:hover {
+  color: #e10c0c;
+  text-decoration: underline;}
+
+.card.Festivais.Gastronômicos h2 a {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+  text-decoration: none;}
+.card.Festivais.Gastronômicos h2 a:hover {
+  color: #0058db;
+  text-decoration: underline;}
+
+body.Festa.Junina .card {
+  background-color: #f7feb3;
+  border: 2px solid #f7feb3;
+  border-radius: 15px;
+  padding: 15px;
+  width: 1200px;
+  height: 250px;
+  font-size: 150px;
+  transition: transform 0.3s;
+  margin-left: 75px;
+  margin-top: 40px;}
+body.Festa.Junina .card img {
+  width: 63%;        
+  height: auto;      
+  display: block;
+  margin: 0 auto;}
+body.Festa.Junina .card p {
+  text-align: left;}
+
+body.Feira.Agropecuária .card {
+  background-color: #dd7c59;
+  border: 2px solid #dd7c59;
+  border-radius: 15px;
+  padding: 15px;
+  width: 1200px;
+  height: 250px;
+  font-size: 150px;
+  transition: transform 0.3s;
+  margin-left: 75px;
+  margin-top: 40px;}
+body.Feira.Agropecuária .card img {
+  width: 63%;        
+  height: auto;      
+  display: block;
+  margin: 0 auto;}
+body.Feira.Agropecuária .card p {
+  text-align: left;}
+
+body.Festivais.Gastronômicos .card {
+  background-color: #a9d7ff;
+  border: 2px solid #a9d7ff;
+  border-radius: 15px;
+  padding: 15px;
+  width: 1200px;
+  height: 250px;
+  font-size: 150px;
+  transition: transform 0.3s;
+  margin-left: 75px;
+  margin-top: 40px;}
+body.Festivais.Gastronômicos .card img {
+  width: 63%;        
+  height: auto;      
+  display: block;
+  margin: 0 auto;}
+body.Festivais.Gastronômicos .card p {
+  text-align: left;}
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/logo\ 2.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeOut 1s ease 2s forwards;
+}
+
+.splash img {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.loading-bar {
+  width: 225px;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #618955;
+  animation: load 2s linear forwards;
+}
+
+.texto {
+  font-size: 21px;
+  color: #000000;}
+
+@keyframes load {
+  0% {width: 0%;} 100% {width: 100%;}}
+
+@keyframes fadeOut {
+  to {opacity: 0; visibility: hidden;}}
+
+body.Introdução h1.digitando {
+  color: #05ac1e;
+  font-size: 70px;
+  font-family: 'Georgia', serif;
+  margin-top: 40px;
+  text-align: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none;
+  display: inline-block;
+
+  width: 0ch;
+  animation: aparece 0s linear 0.1s forwards, digitando 2s steps(35) 3s forwards;
+  visibility: hidden;}
+@keyframes aparece {
+  to {
+    visibility: visible;
+  }}
+@keyframes digitando {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 31ch;
+  }}
+
+body.Festa.Junina h1.digitando {
+  color: #b18905;
+  font-size: 70px;
+  font-family: 'Georgia', serif;
+  margin-top: 40px;
+  text-align: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none;
+  display: inline-block;
+
+  width: 0ch;
+  animation: aparece 0s linear 0.1s forwards, digitando 2s steps(35) 3s forwards;
+  visibility: hidden;}
+@keyframes aparece {
+  to {
+    visibility: visible;
+  }}
+@keyframes digitando {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 31ch;
+  }}
+
+body.Feira.Agropecuária h1.digitando {
+  color: #e10c0c;
+  font-size: 70px;
+  font-family: 'Georgia', serif;
+  margin-top: 40px;
+  text-align: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none;
+  display: inline-block;
+
+  width: 0ch;
+  animation: aparece 0s linear 0.1s forwards, digitando 2s steps(35) 3s forwards;
+  visibility: hidden;}
+@keyframes aparece {
+  to {
+    visibility: visible;
+  }}
+@keyframes digitando {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 31ch;
+  }}
+
+body.Festivais.Gastronômicos h1.digitando {
+  color: #0058db;
+  font-size: 70px;
+  font-family: 'Georgia', serif;
+  margin-top: 40px;
+  text-align: center;
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: none;
+  display: inline-block;
+
+  width: 0ch;
+  animation: aparece 0s linear 0.1s forwards, digitando 2s steps(35) 3s forwards;
+  visibility: hidden;}
+@keyframes aparece {
+  to {
+    visibility: visible;
+  }}
+@keyframes digitando {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 31ch;
+  }}
+
+.card.principal {
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 1300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: 'Georgia', serif;
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;}
+.frase {
+  opacity: 0;
+  transform: translateY(20px); 
+  animation-fill-mode: forwards; 
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;}
+.frase:nth-child(1) {
+  animation-name: aparecer;
+  animation-delay: 3s;}
+.frase:nth-child(2) {
+  animation-name: aparecer;
+  animation-delay: 4s;}
+.frase:nth-child(3) {
+  animation-name: aparecer;
+  animation-delay: 5s;}
+.frase:nth-child(4) {
+  animation-name: aparecer;
+  animation-delay: 6s;}
+.frase:nth-child(5) {
+  animation-name: aparecer;
+  animation-delay: 7s;}
+.frase:nth-child(6) {
+  animation-name: aparecer;
+  animation-delay: 8s;}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);}}
+
+body.Festa.Junina .card.Comidas.típicas h5{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: 'Georgia', serif;
+  color: black;
+  font-size: 150px;
+  line-height: 1.5;}
+.frase {
+  opacity: 0;
+  transform: translateY(20px); 
+  animation-fill-mode: forwards; 
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  margin-bottom: 0px}
+.frase p {
+  margin: 0 !important;
+  padding: 0;
+  font-size: 22px;}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; }
+
+.audio-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.audio-container audio {
+  width: 150px;
+  height: 25px;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);}
